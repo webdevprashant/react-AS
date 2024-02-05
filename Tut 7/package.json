@@ -1,0 +1,23 @@
+{
+  "name": "tut-4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "App.js",
+  "scripts": {
+    "start-dev": "rm -rf .parcel-cache && parcel index.html",
+    "start-prod": "rm -rf .parcel-cache && parcel build index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "parcel": "^2.11.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.21.2"
+  },
+  "devDependencies": {
+    "process": "^0.11.10"
+  }
+}

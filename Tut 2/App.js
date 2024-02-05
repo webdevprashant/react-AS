@@ -1,0 +1,17 @@
+import React from "react";
+import ReactDOM  from "react-dom/client";
+
+const heading = React.createElement("h1" , { id: "heading" } , "Hello World");     // Heading is object
+const root = ReactDOM.createRoot(document.getElementById("root"));
+// root.render(heading);       // Convert heading obj to html element and give it to DOM
+
+const parent = React.createElement("div" , {id: "parent"} , 
+            [React.createElement("div" , { id : "child" } , 
+            [React.createElement("h1" , { id: "head1" }, "This is Heading 1" ), 
+            React.createElement("h2" , { id: "head2" }, "This is Heading 2" )]  //Create Siblings
+        ), 
+
+        React.createElement("div" , { id : "child2" } , React.createElement("h3" , { id: "head3" }, "This is Heading 3" ))
+]);     
+
+root.render(parent);

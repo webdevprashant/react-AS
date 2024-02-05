@@ -1,0 +1,23 @@
+{
+  "name": "igniting_the_app",
+  "version": "1.0.0",
+  "description": "React create app from scratch",
+  "scripts": {
+    "test": "ls"
+  },
+  "author": "Prashant",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.11.0",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "browserslist": [
+    "last 2 Chrome version",
+    "last 10 Firefox version",
+    ""
+  ] 
+}

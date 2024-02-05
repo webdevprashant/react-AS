@@ -1,0 +1,2 @@
+export const RES_LOGO = "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fill/";
+export const CDN_LOGO = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsLprVyP4v41RsWcHJshD46GuPLt_K255qqw&usqp=CAU";
