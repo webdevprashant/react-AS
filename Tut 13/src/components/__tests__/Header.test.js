@@ -67,3 +67,18 @@ it("Should check user Offline OR Online or not" , () => {
     const checkStatus = screen.queryByText("🔴");
     expect(checkStatus).toBeNull();
 });
+
+it("Should check login and logout in Header" , () => {
+    render(
+        <BrowserRouter>
+        <Provider store={appStore}>
+            <Header />
+        </Provider>
+        </BrowserRouter>
+    );
+
+    const loginButton = screen.getByRole("button" , {name: "Login"});       // get login button
+    fireEvent.click(loginButton);                       // After click on login button
+    expect(screen.getByRole("button" , {name: "Logout"})).toBeInTheDocument();  // after click login button, logout should expect
+
+})
